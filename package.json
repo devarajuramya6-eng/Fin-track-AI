@@ -1,0 +1,13 @@
+{
+  "name": "ai-fintech-platform",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "AI FinTech Personal Finance & Risk Platform",
+  "scripts": {
+    "start": "python main.py",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": "pytest"
+  }
+}
