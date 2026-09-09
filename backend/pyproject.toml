@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fintech-backend"
+version = "1.0.0"
+description = "AI FinTech Personal Finance & Risk Platform Backend"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Solo Developer"}]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "C4"]
+ignore = ["E501", "E402", "F821", "B008", "E712", "E741"]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --asyncio-mode=auto"
+testpaths = ["../tests/backend"]
+python_files = ["test_*.py"]

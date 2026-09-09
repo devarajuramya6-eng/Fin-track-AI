@@ -1,0 +1,7 @@
+{
+  "ENVIRONMENT": "development",
+  "PROJECT_NAME": "AI FinTech Platform",
+  "DATABASE_URL": "sqlite+aiosqlite:///./fintech.db",
+  "SECRET_KEY": "change-this-in-production-secure-key",
+  "ACCESS_TOKEN_EXPIRE_MINUTES": 1440
+}
